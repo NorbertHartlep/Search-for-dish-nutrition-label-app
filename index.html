@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Burned&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nutrition Label</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+      <div id="searching">
+      <input type="search-bar" id="searchDish" placeholder="Check for nutrition facts!"></input>
+      <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" id="searchbutton" xmlns="http://www.w3.org/2000/svg"><path d="M15.8787 4.87866H3.87872V6.87866H15.8787V4.87866Z" fill="currentColor"></path><path d="M15.8787 8.87866H3.87872V10.8787H15.8787V8.87866Z" fill="currentColor"></path><path d="M3.87872 12.8787H11.8787V14.8787H3.87872V12.8787Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M13.7574 12.7573C12.5858 13.9289 12.5858 15.8284 13.7574 17C14.681 17.9236 16.0571 18.1191 17.1722 17.5864L18.7071 19.1213L20.1213 17.7071L18.5864 16.1722C19.1191 15.057 18.9236 13.681 18 12.7573C16.8284 11.5858 14.9289 11.5858 13.7574 12.7573ZM15.1716 15.5858C15.5621 15.9763 16.1953 15.9763 16.5858 15.5858C16.9763 15.1952 16.9763 14.5621 16.5858 14.1716C16.1953 13.781 15.5621 13.781 15.1716 14.1716C14.7811 14.5621 14.7811 15.1952 15.1716 15.5858Z" fill="currentColor"></path></svg>
+      </div>
+<div id="result">
+  There will display the dish what had you chosed
+</div>
+
+    <div class="label">
+      <header>
+        <h1 class="bold">Nutrition Facts</h1>
+        <div class="divider"></div>
+      </header>
+      <div class="divider lg"></div>
+      <div class="calories-info">
+        <p class="bold sm-text">Amount per serving</p>
+        <h1>Calories <span class="right"> <div id="kcals">230</div></span></h1>
+      </div>
+      <div class="divider md"></div>
+      <div class="daily-value sm-text">
+        <p class="right bold no-divider">% Daily Value *</p>
+        <br>
+        
+
+        <p > <div id="fat">Fat</div> 
+            <div id="fatValue">8g</div>
+            <span class="bold right">  <div id="fatDayPer">10%</div>
+            </span>
+        </p>
+        <p class="no-divider"> <div id="carbs"> Carbohydrates</div>  
+          <div id="carbsValue">37g </div> 
+          <span class="right bold">  <div id="carbsDayPer">13% </div> 
+          </span>
+        </p>
+        <p class="no-divider">  <div id="prot">Protein</div>  
+           <div id="protValue">3g</div>
+            <span class="right bold">  <div id="protDayPer">10%</div>  </span>
+        </p>
+        <div class="divider md"></div>
+      </div>
+      <p class="note">* The nutrition facts using as optimal theese values: 30fats,350 carbs 80 proteins.</p>
+    </div>
+    <div id="health">
+This value for carbohydrates is <div id="carbsval"></div>
+<br>This value for fats is <div id="fatval"></div>
+<br>This value for proteins is <div id="protval"></div>
+    </div>
+    
+  </body>
+</html>
